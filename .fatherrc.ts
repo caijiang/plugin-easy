@@ -5,6 +5,11 @@ export default defineConfig({
   cjs: {
     platform: 'node',
     output: 'lib',
-    ignores: ['**/withoutRest.ts', '**/clientIndex.ts'],
+    ignores: [
+      '**/withoutRest.ts',
+      '**/clientIndex.ts',
+      '**/message.ts',
+      '**/utils.ts',
+    ],
   },
 });

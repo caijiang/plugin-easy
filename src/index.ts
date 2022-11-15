@@ -29,6 +29,14 @@ export default (api: IApi) => {
     winPath(join(__dirname, '../src/spring/withoutRest.ts')),
     'utf-8',
   );
+  const messageTemplate = readFileSync(
+    winPath(join(__dirname, '../src/message.ts')),
+    'utf-8',
+  );
+  const utilsTemplate = readFileSync(
+    winPath(join(__dirname, '../src/utils.ts')),
+    'utf-8',
+  );
   const clientIndexTemplate = readFileSync(
     winPath(join(__dirname, '../src/clientIndex.ts')),
     'utf-8',
@@ -38,6 +46,16 @@ export default (api: IApi) => {
     api.writeTmpFile({
       path: 'spring/withoutRest.ts',
       content: withoutRestTemplate,
+    });
+
+    api.writeTmpFile({
+      path: 'message.ts',
+      content: messageTemplate,
+    });
+
+    api.writeTmpFile({
+      path: 'utils.ts',
+      content: utilsTemplate,
     });
 
     api.writeTmpFile({
