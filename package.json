@@ -1,6 +1,6 @@
 {
   "name": "@caijiang/plugin-easy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "@caijiang/plugin-easy",
   "repository": "https://github.com/caijiang/easy-plugin",
@@ -14,7 +14,8 @@
   ],
   "scripts": {
     "build": "father build",
-    "dev": "father dev"
+    "dev": "father dev",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "lodash": "^4.17.21"
