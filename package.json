@@ -1,0 +1,38 @@
+{
+  "name": "@caijiang/plugin-easy",
+  "version": "0.0.1",
+  "private": false,
+  "description": "@caijiang/plugin-easy",
+  "repository": "https://github.com/caijiang/easy-plugin",
+  "license": "MIT",
+  "author": "Cai Jiang",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "father build",
+    "dev": "father dev"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@ant-design/pro-card": "^2.0.24",
+    "@ant-design/pro-provider": "~2.0.14",
+    "@ant-design/pro-table": "^3.1.5",
+    "@types/lodash": "^4.14.189",
+    "@types/react": "^18.0.25",
+    "antd": "^4.20.7",
+    "axios": "^1.1.3",
+    "father": "^4.0.0",
+    "prettier": "^2.7.1",
+    "react": "^17.0.0",
+    "umi": "4.x"
+  },
+  "peerDependencies": {
+    "umi": "4.x"
+  }
+}
